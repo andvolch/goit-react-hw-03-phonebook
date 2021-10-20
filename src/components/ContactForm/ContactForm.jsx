@@ -22,6 +22,7 @@ class ContactForm extends Component {
 
   handleSubmint = e => {
     e.preventDefault();
+
     this.props.submit(this.state);
     this.resetForm();
   };
