@@ -7,7 +7,7 @@ import s from './ContactForm.module.css';
 
 class ContactForm extends Component {
   state = {
-    id: '',
+    // id: shortid(),
     name: '',
     number: '',
   };
@@ -22,8 +22,8 @@ class ContactForm extends Component {
 
   handleSubmint = e => {
     e.preventDefault();
-
-    this.props.submit(this.state);
+    const { name, number } = this.state;
+    this.props.submit({ id: shortid(), name, number });
     this.resetForm();
   };
 
