@@ -7,7 +7,6 @@ import s from './ContactForm.module.css';
 
 class ContactForm extends Component {
   state = {
-    // id: shortid(),
     name: '',
     number: '',
   };
@@ -73,9 +72,6 @@ class ContactForm extends Component {
 }
 
 ContactForm.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
-  number: PropTypes.string,
   submit: PropTypes.func.isRequired,
 };
 
